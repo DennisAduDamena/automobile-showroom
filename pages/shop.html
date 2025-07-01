@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Car Sell Center - Shop</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-bold">Car.</span>
+      <span class="logo-light">Cars Sell Center</span>
+    </div>
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="./models.html">Models</a>
+      <a href="./services.html">Services</a>
+      <a href="./shop.html" class="active">Shop</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="nav-btn">Sign In</button>
+      <button class="nav-btn nav-btn-primary">Configure</button>
+    </div>
+  </header>
+
+  <main class="main-shop">
+    <section class="shop-header">
+      <h1>Configure & Purchase</h1>
+      <p>
+        Choose your car, customize features, and proceed to purchase.
+      </p>
+    </section>
+    <section class="shop-configurator">
+      <form id="configForm">
+        <div class="form-group">
+          <label for="carModel">Select Model</label>
+          <select id="carModel" name="carModel">
+            <option value="Mercedes-Benz AMG C 63 S Coupe">Mercedes-Benz AMG C 63 S Coupe</option>
+            <option value="BMW M4 Competition">BMW M4 Competition</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="color">Color</label>
+          <select id="color" name="color">
+            <option value="Gold">Gold</option>
+            <option value="White">White</option>
+            <option value="Black">Black</option>
+            <option value="Blue">Blue</option>
+            <option value="Red">Red</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="transmission">Transmission</label>
+          <select id="transmission" name="transmission">
+            <option value="Automatic">Automatic</option>
+            <option value="Manual">Manual</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="extra">Extras</label>
+          <input type="checkbox" id="sunroof" name="extra" value="Sunroof">
+          <label for="sunroof">Sunroof</label>
+          <input type="checkbox" id="bodykit" name="extra" value="Body Kit">
+          <label for="bodykit">Body Kit</label>
+          <input type="checkbox" id="premiumAudio" name="extra" value="Premium Audio">
+          <label for="premiumAudio">Premium Audio</label>
+        </div>
+        <button type="submit" class="cta-btn">Submit Configuration</button>
+      </form>
+      <div id="configResult" class="config-result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <span>&copy; 2025 Car Sell Center. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>

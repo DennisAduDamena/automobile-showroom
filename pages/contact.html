@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Car Sell Center - Contact</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-bold">Car.</span>
+      <span class="logo-light">Cars Sell Center</span>
+    </div>
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="./models.html">Models</a>
+      <a href="./services.html">Services</a>
+      <a href="./shop.html">Shop</a>
+      <a href="./contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="nav-btn">Sign In</button>
+      <button class="nav-btn nav-btn-primary">Configure</button>
+    </div>
+  </header>
+
+  <main class="main-contact">
+    <section class="contact-header">
+      <h1>Contact Us</h1>
+      <p>
+        Get in touch for inquiries, test drives, or support.
+      </p>
+    </section>
+    <section class="contact-form-section">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="cta-btn">Send Message</button>
+      </form>
+      <div id="contactResult" class="contact-result"></div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <span>&copy; 2025 Car Sell Center. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>
